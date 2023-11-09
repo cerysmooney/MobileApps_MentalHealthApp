@@ -13,9 +13,9 @@
         android:theme="@style/Theme.MobileApps_MentalHealthApp"
         tools:targetApi="31">
         <activity
-            android:name=".Luke"
+            android:name=".Cerys"
             android:exported="false"
-            android:label="@string/title_activity_luke"
+            android:label="@string/title_activity_cerys"
             android:theme="@style/Theme.MobileApps_MentalHealthApp" />
         <activity
             android:name=".MainActivity"
