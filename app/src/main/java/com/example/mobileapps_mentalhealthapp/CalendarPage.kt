@@ -28,6 +28,9 @@ class CalendarPage : ComponentActivity() {
                 }
             }
         }
+
+        setContentView(R.layout.calendar_page)
+
         val reflectionPageButton = findViewById<Button>(R.id.buttonReflectionPage)
         reflectionPageButton.setOnClickListener{
             val Intent = Intent(this, ReflectionPage::class.java)
@@ -48,6 +51,6 @@ fun Greeting5(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview5() {
     MobileApps_MentalHealthAppTheme {
-        Greeting5("Android")
+        Greeting5("Olivia")
     }
 }

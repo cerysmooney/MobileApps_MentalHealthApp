@@ -29,16 +29,19 @@ class HomePage : ComponentActivity() {
             }
         }
         setContentView(R.layout.home_page)
+
         val goalsPageButton = findViewById<Button>(R.id.button3)
         goalsPageButton.setOnClickListener{
             val Intent = Intent(this,GoalsPage::class.java)
             startActivity(Intent)
         }
-        val calendarPageButton = findViewById<Button>(R.id.button5)
-        calendarPageButton.setOnClickListener{
+
+        val calendarPageButton = findViewById<Button>(R.id.buttonCalendarPage)
+        calendarPageButton.setOnClickListener {
             val Intent = Intent(this,CalendarPage::class.java)
             startActivity(Intent)
         }
+
         val feelingsPageButton = findViewById<Button>(R.id.buttonFeelingsPage)
         feelingsPageButton.setOnClickListener{
             val Intent = Intent(this,FeelingsPage::class.java)
@@ -50,7 +53,7 @@ class HomePage : ComponentActivity() {
 @Composable
 fun Greeting3(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name! This is the Home Page",
+        text = "Hello $name! Homepage",
         modifier = modifier
     )
 }

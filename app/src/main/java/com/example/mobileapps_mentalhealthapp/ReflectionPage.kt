@@ -32,15 +32,14 @@ class ReflectionPage : ComponentActivity() {
 @Composable
 fun Greeting7(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello reflection page $name!",
+        text = "Hello $name! Reflection Page",
         modifier = modifier
     )
 }
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview7() {
     MobileApps_MentalHealthAppTheme {
-        Greeting7("Android")
+        Greeting7("Olivia")
     }
 }

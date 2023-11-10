@@ -32,7 +32,7 @@ class GoalsPage : ComponentActivity() {
 @Composable
 fun Greeting4(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Hello $name! Goals",
         modifier = modifier
     )
 }
@@ -41,6 +41,6 @@ fun Greeting4(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview4() {
     MobileApps_MentalHealthAppTheme {
-        Greeting4("Android")
+        Greeting4("Olivia")
     }
 }
