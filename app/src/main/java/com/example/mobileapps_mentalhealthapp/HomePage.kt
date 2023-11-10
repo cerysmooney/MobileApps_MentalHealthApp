@@ -37,7 +37,7 @@ class HomePage : ComponentActivity() {
 @Composable
 fun Greeting3(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Hello $name! This is the Home Page",
         modifier = modifier
     )
 }
@@ -46,6 +46,6 @@ fun Greeting3(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview3() {
     MobileApps_MentalHealthAppTheme {
-        Greeting3("Android")
+        Greeting3("Olivia")
     }
 }
