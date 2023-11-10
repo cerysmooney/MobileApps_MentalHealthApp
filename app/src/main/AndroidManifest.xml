@@ -13,10 +13,11 @@
         android:theme="@style/Theme.MobileApps_MentalHealthApp"
         tools:targetApi="31">
         <activity
-            android:name=".Cerys"
+            android:name=".NamePage"
             android:exported="false"
-            android:label="@string/title_activity_cerys"
+            android:label="@string/title_activity_name_page"
             android:theme="@style/Theme.MobileApps_MentalHealthApp" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

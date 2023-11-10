@@ -1,8 +1,6 @@
 package com.example.mobileapps_mentalhealthapp
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mobileapps_mentalhealthapp.ui.theme.MobileApps_MentalHealthAppTheme
 
-class MainActivity : ComponentActivity() {
+class NamePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -24,22 +22,16 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Laura")
+                    Greeting2("Android")
                 }
             }
         }
-        setContentView(R.layout.my_layout)
-        val namePagebutton = findViewById<Button>(R.id.button)
-        namePagebutton.setOnClickListener{
-            val Intent = Intent(this,NamePage::class.java)
-            startActivity(Intent)
-        }
-
+        setContentView(R.layout.name_page)
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun Greeting2(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -48,8 +40,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun GreetingPreview2() {
     MobileApps_MentalHealthAppTheme {
-        Greeting("Android")
+        Greeting2("Android")
     }
 }
