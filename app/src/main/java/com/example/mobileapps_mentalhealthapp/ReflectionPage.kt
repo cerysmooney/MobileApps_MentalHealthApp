@@ -1,8 +1,6 @@
 package com.example.mobileapps_mentalhealthapp
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mobileapps_mentalhealthapp.ui.theme.MobileApps_MentalHealthAppTheme
 
-class CalendarPage : ComponentActivity() {
+class ReflectionPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -24,30 +22,25 @@ class CalendarPage : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting5("Android")
+                    Greeting7("Android")
                 }
             }
-        }
-        val reflectionPageButton = findViewById<Button>(R.id.buttonReflectionPage)
-        reflectionPageButton.setOnClickListener{
-            val Intent = Intent(this, ReflectionPage::class.java)
-            startActivity(Intent)
         }
     }
 }
 
 @Composable
-fun Greeting5(name: String, modifier: Modifier = Modifier) {
+fun Greeting7(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name! calendar",
+        text = "Hello reflection page $name!",
         modifier = modifier
     )
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview5() {
+fun GreetingPreview7() {
     MobileApps_MentalHealthAppTheme {
-        Greeting5("Android")
+        Greeting7("Android")
     }
 }

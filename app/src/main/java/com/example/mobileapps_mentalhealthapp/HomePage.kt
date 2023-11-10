@@ -36,10 +36,14 @@ class HomePage : ComponentActivity() {
         }
         val calendarPageButton = findViewById<Button>(R.id.button5)
         calendarPageButton.setOnClickListener{
-            val Intent = Intent(this,GoalsPage::class.java)
+            val Intent = Intent(this,CalendarPage::class.java)
             startActivity(Intent)
         }
-
+        val feelingsPageButton = findViewById<Button>(R.id.buttonFeelingsPage)
+        feelingsPageButton.setOnClickListener{
+            val Intent = Intent(this,FeelingsPage::class.java)
+            startActivity(Intent)
+        }
     }
 }
 
