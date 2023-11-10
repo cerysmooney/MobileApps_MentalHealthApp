@@ -29,11 +29,12 @@ class HomePage : ComponentActivity() {
             }
         }
         setContentView(R.layout.home_page)
-        val homePageButtonGoals = findViewById<Button>(R.id.button)
-        homePageButtonGoals.setOnClickListener{
-            val Intent = Intent(this,HomePage::class.java)
+        val goalsPageButton = findViewById<Button>(R.id.button3)
+        goalsPageButton.setOnClickListener{
+            val Intent = Intent(this,GoalsPage::class.java)
             startActivity(Intent)
         }
+
     }
 }
 

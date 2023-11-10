@@ -28,9 +28,9 @@ class NamePage : ComponentActivity() {
                 }
             }
         }
-        setContentView(R.layout.home_page)
-        val homePagebutton = findViewById<Button>(R.id.button)
-        homePagebutton.setOnClickListener{
+        setContentView(R.layout.name_page)
+        val homePageButton = findViewById<Button>(R.id.button2)
+        homePageButton.setOnClickListener{
             val Intent = Intent (this, HomePage::class.java)
             startActivity(Intent)
         }
