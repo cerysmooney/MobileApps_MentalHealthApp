@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Laura")
+                    Greeting("Olivia")
                 }
             }
         }
@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "Hello $name! This is the Landing Page",
         modifier = modifier
     )
 }
@@ -50,6 +50,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     MobileApps_MentalHealthAppTheme {
-        Greeting("Android")
+        Greeting("Olivia")
     }
 }
