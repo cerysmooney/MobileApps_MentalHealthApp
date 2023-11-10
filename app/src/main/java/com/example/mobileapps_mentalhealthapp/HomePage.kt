@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mobileapps_mentalhealthapp.ui.theme.MobileApps_MentalHealthAppTheme
 
-class NamePage : ComponentActivity() {
+class HomePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -24,21 +24,18 @@ class NamePage : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting2("Android")
+                    Greeting3("Android")
                 }
             }
         }
-        setContentView(R.layout.home_page)
-        val homePagebutton = findViewById<Button>(R.id.button)
-        homePagebutton.setOnClickListener{
-            val Intent = Intent (this, HomePage::class.java)
-            startActivity(Intent)
-        }
+
+
+
     }
 }
 
 @Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
+fun Greeting3(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
         modifier = modifier
@@ -47,8 +44,8 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview2() {
+fun GreetingPreview3() {
     MobileApps_MentalHealthAppTheme {
-        Greeting2("Android")
+        Greeting3("Android")
     }
 }
