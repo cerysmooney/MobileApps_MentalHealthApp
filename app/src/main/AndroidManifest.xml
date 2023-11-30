@@ -12,36 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileApps_MentalHealthApp"
         tools:targetApi="31">
-        <activity
-            android:name=".ReflectionPage"
-            android:exported="false"
-            android:label="@string/title_activity_reflection_page"
-            android:theme="@style/Theme.MobileApps_MentalHealthApp" />
-        <activity
-            android:name=".FeelingsPage"
-            android:exported="false"
-            android:label="@string/title_activity_feelings_page"
-            android:theme="@style/Theme.MobileApps_MentalHealthApp" />
-        <activity
-            android:name=".CalendarPage"
-            android:exported="false"
-            android:label="@string/title_activity_calendar_page"
-            android:theme="@style/Theme.MobileApps_MentalHealthApp" />
-        <activity
-            android:name=".GoalsPage"
-            android:exported="false"
-            android:label="@string/title_activity_goals_page"
-            android:theme="@style/Theme.MobileApps_MentalHealthApp" />
-        <activity
-            android:name=".HomePage"
-            android:exported="false"
-            android:label="@string/title_activity_home_page"
-            android:theme="@style/Theme.MobileApps_MentalHealthApp" />
-        <activity
-            android:name=".NamePage"
-            android:exported="false"
-            android:label="@string/title_activity_name_page"
-            android:theme="@style/Theme.MobileApps_MentalHealthApp" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
